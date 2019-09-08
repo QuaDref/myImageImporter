@@ -35,12 +35,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBAction func importImage(_ sender: Any) {
         whichImageController = 0
         
+        image.sourceType = .photoLibrary
         image.delegate = self
         image.mediaTypes = ["public.image", "public.movie"]
         image.allowsEditing = false
-        self.present(image, animated: true){
-            //after its complete
-        }
+        self.present(image, animated: true, completion: nil)
         
     }
     

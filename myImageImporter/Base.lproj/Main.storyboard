@@ -20,7 +20,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bgV-hN-8bW">
                                 <rect key="frame" x="75" y="45" width="225" height="275"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.071156759110091727" green="0.07001151603926109" blue="0.50782604629119166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="s1Y-Tr-xEN"/>
                                     <constraint firstAttribute="height" constant="275" id="vWf-78-BEo"/>
@@ -28,26 +28,29 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O38-5P-84x">
                                 <rect key="frame" x="313" y="167.5" width="32" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtO-IB-C2R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tc-Mi-eZd">
-                                <rect key="frame" x="11" y="167.5" width="59" height="30"/>
-                                <state key="normal" title="Previous"/>
+                                <rect key="frame" x="36" y="167.5" width="34" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="previousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRm-99-Y2Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sab-u3-JUa">
                                 <rect key="frame" x="100" y="412" width="175" height="50"/>
-                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98726926813471505" green="0.71628358766224565" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="IZM-3c-hcg"/>
                                     <constraint firstAttribute="height" constant="50" id="LRZ-jo-AZ2"/>
                                 </constraints>
-                                <state key="normal" title="Import Top Image"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Library"/>
                                 <connections>
                                     <action selector="importImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSp-Xl-2W0"/>
                                 </connections>
