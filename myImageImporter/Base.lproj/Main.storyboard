@@ -27,7 +27,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O38-5P-84x">
-                                <rect key="frame" x="313" y="167.5" width="32" height="30"/>
+                                <rect key="frame" x="305" y="167.5" width="32" height="30"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -58,7 +58,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="O38-5P-84x" firstAttribute="leading" secondItem="bgV-hN-8bW" secondAttribute="trailing" constant="13" id="GSm-Sl-haX"/>
+                            <constraint firstItem="O38-5P-84x" firstAttribute="leading" secondItem="bgV-hN-8bW" secondAttribute="trailing" constant="5" id="GSm-Sl-haX"/>
                             <constraint firstItem="8Tc-Mi-eZd" firstAttribute="centerY" secondItem="bgV-hN-8bW" secondAttribute="centerY" id="Nfn-jc-ykK"/>
                             <constraint firstItem="bgV-hN-8bW" firstAttribute="leading" secondItem="8Tc-Mi-eZd" secondAttribute="trailing" constant="5" id="XMI-qu-X0b"/>
                             <constraint firstItem="O38-5P-84x" firstAttribute="centerY" secondItem="bgV-hN-8bW" secondAttribute="centerY" id="hxZ-gH-954"/>
