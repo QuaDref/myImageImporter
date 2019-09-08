@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myImageImporter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bgV-hN-8bW">
+                                <rect key="frame" x="75" y="45" width="225" height="275"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="s1Y-Tr-xEN"/>
+                                    <constraint firstAttribute="height" constant="275" id="vWf-78-BEo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O38-5P-84x">
+                                <rect key="frame" x="313" y="167.5" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtO-IB-C2R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tc-Mi-eZd">
+                                <rect key="frame" x="11" y="167.5" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="previousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRm-99-Y2Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sab-u3-JUa">
+                                <rect key="frame" x="100" y="412" width="175" height="50"/>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="IZM-3c-hcg"/>
+                                    <constraint firstAttribute="height" constant="50" id="LRZ-jo-AZ2"/>
+                                </constraints>
+                                <state key="normal" title="Import Top Image"/>
+                                <connections>
+                                    <action selector="importImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSp-Xl-2W0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O38-5P-84x" firstAttribute="leading" secondItem="bgV-hN-8bW" secondAttribute="trailing" constant="13" id="GSm-Sl-haX"/>
+                            <constraint firstItem="8Tc-Mi-eZd" firstAttribute="centerY" secondItem="bgV-hN-8bW" secondAttribute="centerY" id="Nfn-jc-ykK"/>
+                            <constraint firstItem="bgV-hN-8bW" firstAttribute="leading" secondItem="8Tc-Mi-eZd" secondAttribute="trailing" constant="5" id="XMI-qu-X0b"/>
+                            <constraint firstItem="O38-5P-84x" firstAttribute="centerY" secondItem="bgV-hN-8bW" secondAttribute="centerY" id="hxZ-gH-954"/>
+                            <constraint firstItem="sab-u3-JUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="kDQ-5M-hkX"/>
+                            <constraint firstItem="sab-u3-JUa" firstAttribute="top" secondItem="bgV-hN-8bW" secondAttribute="bottom" constant="92" id="m9k-Zy-GdZ"/>
+                            <constraint firstItem="bgV-hN-8bW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="nbT-6Q-aCE"/>
+                            <constraint firstItem="bgV-hN-8bW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="neJ-yr-al0"/>
+                            <constraint firstItem="sab-u3-JUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-100" id="qiW-6S-nXA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="bgV-hN-8bW" id="w1t-Hh-g9K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
